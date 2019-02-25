@@ -25,7 +25,11 @@ spring.jpa.database: POSTGRESQL
 spring.datasource.platform: postgres
 spring.jpa.show-sql: true
 spring.datasource.driver-class-name: org.postgresql.Driver
-spring.datasource.url: jdbc:postgresql://localhost:5432/project13
+spring.datasource.url: jdbc:postgresql://localhost:5432/assets_local
+spring.datasource.username: "postgres"
+spring.datasource.password: "{cipher}32e58d5749b7f9e758c7620ea5dd57eecf2bc33cb54c49ccdcf1b0cd65891192"
+spring.datasource.testWhileIdle: true
+spring.datasource.validationQuery: "SELECT 1"
 spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
 
 spring.datasource.initialization-mode: always
