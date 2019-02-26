@@ -20,7 +20,7 @@ management:
       base-path: '/'
 
 # Datasource ()
-example.property: "This is from PROD"
+example.property: "This is from PRODUCTION file"
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform: "postgres"
 spring.jpa.show-sql: "true"
