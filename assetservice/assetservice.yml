@@ -20,17 +20,17 @@ management:
       base-path: '/'
 
 # Datasource ()
-example.property: DEFAULT
-spring.jpa.database: POSTGRESQL
-spring.datasource.platform: postgres
-spring.jpa.show-sql: true
-spring.datasource.driver-class-name: org.postgresql.Driver
-spring.datasource.url: jdbc:postgresql://localhost:5432/assets_local
+example.property: "This is from DEFAULT"
+spring.jpa.database: "POSTGRESQL"
+spring.datasource.platform: "postgres"
+spring.jpa.show-sql: "true"
+spring.datasource.driver-class-name: "org.postgresql.Driver"
+spring.datasource.url: "jdbc:postgresql://localhost:5432/assets_local"
 spring.datasource.username: "postgres"
 spring.datasource.password: ""
-spring.datasource.testWhileIdle: true
+spring.datasource.testWhileIdle: "true"
 spring.datasource.validationQuery: "SELECT 1"
-spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
 
 spring.datasource.initialization-mode: always
 # These aren't needed and I don't know what they do
