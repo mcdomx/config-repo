@@ -20,7 +20,7 @@ management:
       base-path: '/'
 
 # Datasource ()
-example.property: "This is from DEFAULT"
+example.property: "This is from DEV"
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform: "postgres"
 spring.jpa.show-sql: "true"
