@@ -33,7 +33,7 @@ spring.datasource.testWhileIdle: "true"
 spring.datasource.validationQuery: "SELECT 1"
 spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
 
-#spring.datasource.initialization-mode: always
+spring.datasource.initialization-mode: always
 # These aren't needed and I don't know what they do
 # spring.datasource.initialize: true
 # spring.datasource.schema: classpath:/schema.sql
