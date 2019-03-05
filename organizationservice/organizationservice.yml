@@ -25,7 +25,7 @@ spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform: "postgres"
 spring.jpa.show-sql: "true"
 spring.datasource.driver-class-name: "org.postgresql.Driver"
-spring.datasource.url: "jdbc:postgresql://127.17.0.1:5432/assets_local"
+spring.datasource.url: "jdbc:postgresql://database:5432/assets_local"
 spring.datasource.username: "postgres"
 spring.datasource.password: "{cipher}4d0105c0eea6dceecda90d0da20b04a03560308af37b8473730e0092bac74688"
 
@@ -33,7 +33,7 @@ spring.datasource.testWhileIdle: "true"
 spring.datasource.validationQuery: "SELECT 1"
 spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
 
-spring.datasource.initialization-mode: always
+#spring.datasource.initialization-mode: always
 # These aren't needed and I don't know what they do
 # spring.datasource.initialize: true
 # spring.datasource.schema: classpath:/schema.sql
