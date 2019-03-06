@@ -1,7 +1,7 @@
 properties.file: default
 app.info: default
 
-spring.thymeleaf.cache: false
+#spring.thymeleaf.cache: false
 management.security.enabled: false
 spring.h2.console.enabled: true
 
