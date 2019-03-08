@@ -1,5 +1,5 @@
-properties.file: default
-app.info: default
+properties.file: dev
+app.info: dev
 
 #spring.thymeleaf.cache: false
 management.security.enabled: false

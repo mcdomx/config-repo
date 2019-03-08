@@ -1,5 +1,5 @@
-properties.file: default
-app.info: default
+properties.file: prod
+app.info: prod
 
 spring.thymeleaf.cache: false
 management.security.enabled: false
