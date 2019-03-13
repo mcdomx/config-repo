@@ -24,7 +24,7 @@ example.property: "This is from DEFAULT"
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform: "postgres"
 spring.jpa.show-sql: "true"
-spring.jpa.hibernate.ddl-auto: none
+#spring.jpa.hibernate.ddl-auto: none
 spring.datasource.driver-class-name: "org.postgresql.Driver"
 spring.datasource.url: "jdbc:postgresql://org_database:5432/orgs_local"
 spring.datasource.username: "postgres"
