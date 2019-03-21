@@ -7,6 +7,16 @@ logging:
       com.netflix: WARN
       org.springframework.web: WARN
       com.mcdomx: DEBUG
+      
+# Include all actuator endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+      base-path: '/'
+      
 
 eureka:
   instance:
