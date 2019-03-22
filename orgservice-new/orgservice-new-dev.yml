@@ -1,7 +1,7 @@
-properties.file: default
-app.info: default
+properties.file: dev
+app.info: dev
 
-spring.thymeleaf.cache: false
+#spring.thymeleaf.cache: false
 management.security.enabled: false
 spring.h2.console.enabled: true
 
@@ -20,12 +20,12 @@ management:
       base-path: '/'
 
 # Datasource ()
-example.property: "This is from DEFAULT"
+example.property: "This is from DEVELOPMENT"
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform: "postgres"
 spring.jpa.show-sql: "true"
 spring.datasource.driver-class-name: "org.postgresql.Driver"
-spring.datasource.url: "jdbc:postgresql://database:5432/assets_local"
+spring.datasource.url: "jdbc:postgresql://org_database:5432/orgs_local"
 spring.datasource.username: "postgres"
 spring.datasource.password: "{cipher}4d0105c0eea6dceecda90d0da20b04a03560308af37b8473730e0092bac74688"
 
