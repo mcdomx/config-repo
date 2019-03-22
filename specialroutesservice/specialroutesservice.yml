@@ -1,11 +1,24 @@
+properties.file: default
+app.info: default
 
-#Setting the logging levels for the service
-logging:
-  level:
-    com.netflix: WARN
-    org.springframework.web: WARN
-    com.mcdonald: DEBUG
+#spring.thymeleaf.cache: false
+management.security.enabled: false
+spring.h2.console.enabled: true
 
+# Logging
+logging.level.org.springframework.web: INFO
+logging.level.org.hibernate: ERROR
+logging.level.com.mcdonald: DEBUG
+
+# Include all actuator endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+      base-path: '/'
+      
 eureka:
   instance:
     preferIpAddress: true
