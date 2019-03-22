@@ -19,14 +19,7 @@ management:
         - '*'
       base-path: '/'
       
-eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-        defaultZone: http://eurekaserver:8761/eureka/
+
         
 # Datasource ()
 example.property: "This is from DEFAULT"

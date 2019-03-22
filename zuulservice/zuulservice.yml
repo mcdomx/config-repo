@@ -1,5 +1,4 @@
-server:
-  port: 5555
+
 
   #Setting logging levels
 logging:
@@ -18,14 +17,7 @@ management:
       base-path: '/'
       
 
-eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-        defaultZone: http://eurekaserver:8761/eureka/
+
 
 #
 #zuul:
