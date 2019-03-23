@@ -17,11 +17,8 @@ management:
       base-path: '/'
       
 
-
-
-#
-#zuul:
+zuul:
 #  prefix:  /api
-#  routes:
-#    organizationservice: /organization/**
-#    licensingservice: /licensing/**
+ routes:
+   organizationservice: /organization/**
+   licensingservice: /licensing/**
