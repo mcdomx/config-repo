@@ -6,9 +6,9 @@ management.security.enabled: false
 spring.h2.console.enabled: true
 
 # Logging
-logging.level.org.springframework.web: INFO
-logging.level.org.hibernate: ERROR
-logging.level.com.mcdonald: DEBUG
+logging.level.org.springframework.web: WARN
+logging.level.com.netflix: WARN
+logging.level.com.mcdonald: INFO
 
 # Include all actuator endpoints
 management:
