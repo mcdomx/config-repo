@@ -39,4 +39,4 @@ example.property: "This is from DEFAULT"
 spring.datasource.initialization-mode: always
 # These aren't needed and I don't know what they do
 spring.datasource.initialize: true
-spring.datasource.schema: schema.sql
+#spring.datasource.schema: schema.sql
