@@ -35,8 +35,13 @@ spring.jpa.show-sql: "true"
 #spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
 
 
-
+# We want to use an embedded h2 db with the schema.sql load
+# ddl is the process of letting h2 auto-create your tables
+# turn ddl off to use the schema.sql file
+spring.datasource.platform: h2
 spring.datasource.initialization-mode: always
 # These aren't needed and I don't know what they do
+spring.jpa.generate-ddl : false
+spring.jpa.hibernate.ddl-auto: none
 spring.datasource.initialize: true
 #spring.datasource.schema: schema.sql
