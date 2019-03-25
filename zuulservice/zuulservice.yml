@@ -18,7 +18,13 @@ management:
       
 
 zuul:
-#  prefix:  /api
+ prefix:  /api
  routes:
-   organizationservice: /organization/**
-#  licensingservice: /licensing/**
+    organizationservice: /organization/**
+    licensingservice: /licensing/**
+    assetservice: /assets/**
+    assetstatic:
+        path: /assetstatic/**
+        url: //assetservice-static:8081
+ ignored-services: organizationservice
+   
