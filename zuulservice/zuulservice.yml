@@ -2,49 +2,49 @@
 # No Zuul settings - default 
    
 #Use Case 2
-zuul:
- routes:
-    organizationservice: /organization/**
-
+#zuul:
+# routes:
+#    organizationservice: /organization/**
+#
 #Use Case 3
-zuul:
- routes:
-    organizationservice: /organization/**
-    assetservice: /assets/**
-
+#zuul:
+# routes:
+#    organizationservice: /organization/**
+#    assetservice: /assets/**
+#
 #Use Case 4
-zuul:
- ignored-servces: organizationservice, assetservice
- routes:
-    organizationservice: /organization/**
-    assetservice: /assets/**
-
+#zuul:
+# ignored-servces: organizationservice, assetservice
+# routes:
+#    organizationservice: /organization/**
+#    assetservice: /assets/**
+#
 #Use Case 5
-zuul:
- prefix:  /api
- routes:
-    organizationservice: /organization/**
-    assetservice: /assets/**
-
+#zuul:
+# prefix:  /api
+# routes:
+#    organizationservice: /organization/**
+#    assetservice: /assets/**
+#
 #Use Case 6
-zuul:
- prefix:  /api
- routes:
-    assetstatic:
-        path: /assetstatic/**
-        url: //assetservice-static:8081
-
+#zuul:
+# prefix:  /api
+# routes:
+#    assetstatic:
+#        path: /assetstatic/**
+#        url: //assetservice-static:8081
+#
 #Use Case 7
-zuul:
- prefix:  /api
- routes:
-    assetstatic:
-        path: /assetstatic/**
-        serviceId: assetservice
- ribbon:
-    eureka:
-        enabled: false
- assetstatic:
-    ribbon:
-        listOfServers: http://assetservice-static:8081, http://assetservice-static2:8081
-   
+#zuul:
+# prefix:  /api
+# routes:
+#    assetstatic:
+#        path: /assetstatic/**
+#        serviceId: assetservice
+# ribbon:
+#    eureka:
+#        enabled: false
+# assetstatic:
+#    ribbon:
+#        listOfServers: http://assetservice-static:8081, http://assetservice-static2:8081
+#   
