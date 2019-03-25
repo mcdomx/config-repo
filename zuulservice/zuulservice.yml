@@ -2,9 +2,9 @@
 # No Zuul settings - default 
    
 #Use Case 2
-#zuul:
-# routes:
-#    organizationservice: /organization/**
+zuul:
+ routes:
+    organizationservice: /organization/**
 #
 #Use Case 3
 #zuul:
