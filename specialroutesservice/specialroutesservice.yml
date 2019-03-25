@@ -38,7 +38,7 @@ spring.jpa.show-sql: "true"
 # We want to use an embedded h2 db with the schema.sql load
 # ddl is the process of letting h2 auto-create your tables
 # turn ddl off to use the schema.sql file
-spring.h2.console.enabled: true
+spring.datasource.platform: h2
 spring.datasource.initialization-mode: always
 # These aren't needed and I don't know what they do
 spring.jpa.generate-ddl : false
