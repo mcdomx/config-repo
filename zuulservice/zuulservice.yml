@@ -30,18 +30,18 @@ management:
 #   assetservice: /assets/**
 
 #Use Case 4
+#zuul:
+#  ignored-servces: organizationservice, assetservice
+#  routes:
+#    organizationservice: /organization/**
+#    assetservice: /assets/**
+#
+#Use Case 5
 zuul:
-  ignored-servces: organizationservice, assetservice
+  prefix:  /api
   routes:
     organizationservice: /organization/**
     assetservice: /assets/**
-#
-#Use Case 5
-#zuul:
-# prefix:  /api
-# routes:
-#    organizationservice: /organization/**
-#    assetservice: /assets/**
 #
 #Use Case 6
 #zuul:
