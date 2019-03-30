@@ -24,10 +24,10 @@ management:
 #   organizationservice: /organization/**
 #
 #Use Case 3
-#zuul:
-#  routes:
-#   organizationservice: /organization/**
-#   assetservice: /assets/**
+zuul:
+  routes:
+    organizationservice: /organization/**
+    assetservice: /assets/**
 
 #Use Case 4
 #zuul:
@@ -37,11 +37,11 @@ management:
 #    assetservice: /assets/**
 #
 #Use Case 5
-zuul:
-  prefix:  /api
-  routes:
-    organizationservice: /organization/**
-    assetservice: /assets/**
+#zuul:
+#  prefix:  /api
+#  routes:
+#    organizationservice: /organization/**
+#    assetservice: /assets/**
 #
 #Use Case 6
 #zuul:
