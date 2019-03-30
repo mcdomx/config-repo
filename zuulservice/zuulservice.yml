@@ -25,7 +25,7 @@ management:
 #
 #Use Case 3
 zuul:
-routes:
+  routes:
    organizationservice: /organization/**
    assetservice: /assets/**
 
