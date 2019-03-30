@@ -24,7 +24,7 @@ management:
 #   organizationservice: /organization/**
 #
 #Use Case 3
-#zuul:
+zuul:
 routes:
    organizationservice: /organization/**
    assetservice: /assets/**
