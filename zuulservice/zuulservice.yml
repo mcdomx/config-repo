@@ -3,7 +3,7 @@ logging:
     level:
       com.netflix: WARN
       org.springframework.web: WARN
-      com.mcdomx: DEBUG
+      com.mcdonald: DEBUG
       
 # Include all actuator endpoints
 management:
