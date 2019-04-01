@@ -21,40 +21,33 @@ management:
       
 
         
-<<<<<<< HEAD
+
 #Datasource ()
-=======
 # Datasource ()
->>>>>>> parent of a71b7e5... updated zuul
 example.property: "This is from DEFAULT"
 #spring.jpa.database: "POSTGRESQL"
 #spring.datasource.platform: "postgres"
 spring.jpa.show-sql: "true"
-<<<<<<< HEAD
-spring.datasource.driver-class-name: "org.postgresql.Driver"
-spring.datasource.url: "jdbc:postgresql://database:5432/assets_local"
-spring.datasource.username: "postgres"
-=======
 #spring.datasource.driver-class-name: "org.postgresql.Driver"
 #spring.datasource.url: "jdbc:postgresql://database:5432/assets_local"
 #spring.datasource.username: "postgres"
->>>>>>> parent of a71b7e5... updated zuul
+#spring.datasource.driver-class-name: "org.postgresql.Driver"
+#spring.datasource.url: "jdbc:postgresql://database:5432/assets_local"
+#spring.datasource.username: "postgres"
 #spring.datasource.password: "{cipher}8b20d400c608373c1cfddb0e7438002865e6171a8434ce5bd328e214ad1daed6"
 #spring.datasource.testWhileIdle: "true"
 #spring.datasource.validationQuery: "SELECT 1"
 #spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
-<<<<<<< HEAD
 
-
-#We wan#t to use an embedded h2 db with the schema.sql load
-#ddl is the process of letting h2 auto-create your tables
-#turn ddl off to use the schema.sql file
+# We want to use an embedded h2 db with the schema.sql load
+# ddl is the process of letting h2 auto-create your tables
+# turn ddl off to use the schema.sql file
 spring.datasource.platform: h2
 spring.datasource.initialization-mode: always
-#These aren't needed and I don't know what they do
-#spring.jpa.generate-ddl : false
-#spring.jpa.hibernate.ddl-auto: none
-#spring.datasource.initialize: true
+# These aren't needed and I don't know what they do
+spring.jpa.generate-ddl : false
+spring.jpa.hibernate.ddl-auto: none
+spring.datasource.initialize: true
 #spring.datasource.schema: schema.sql
 
 # Per Book
@@ -69,17 +62,6 @@ spring.datasource.initialization-mode: always
 #spring.datasource.testWhileIdle: "true"
 #spring.datasource.validationQuery: "SELECT 1"
 #spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
-=======
 
 
-# We want to use an embedded h2 db with the schema.sql load
-# ddl is the process of letting h2 auto-create your tables
-# turn ddl off to use the schema.sql file
-spring.datasource.platform: h2
-spring.datasource.initialization-mode: always
-# These aren't needed and I don't know what they do
-spring.jpa.generate-ddl : false
-spring.jpa.hibernate.ddl-auto: none
-spring.datasource.initialize: true
-#spring.datasource.schema: schema.sql
->>>>>>> parent of a71b7e5... updated zuul
+
