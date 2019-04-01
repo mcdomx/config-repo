@@ -6,11 +6,9 @@ app.info: default
 #spring.h2.console.enabled: true
 
 # Logging
-logging:
-    level:
-      com.netflix: WARN
-      org.springframework.web: WARN
-      com.mcdonald: DEBUG
+logging.level.org.springframework.web: WARN
+logging.level.com.netflix: WARN
+logging.level.com.mcdonald: INFO
 
 # Include all actuator endpoints
 management:
