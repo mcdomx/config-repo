@@ -6,18 +6,18 @@ management.security.enabled: false
 spring.h2.console.enabled: true
 
 # Logging
-logging.level.org.springframework.web: WARN
-logging.level.com.netflix: WARN
-logging.level.com.mcdonald: INFO
+logging.level.org.springframework.web: INFO
+logging.level.com.netflix: INFO
+logging.level.com.mcdonald: DEBUG
 
 # Include all actuator endpoints
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - '*'
-      base-path: '/'
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:
+#        - '*'
+#      base-path: '/'
       
 
         
