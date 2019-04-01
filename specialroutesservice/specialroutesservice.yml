@@ -2,8 +2,8 @@ properties.file: default
 app.info: default
 
 #spring.thymeleaf.cache: false
-management.security.enabled: false
-spring.h2.console.enabled: true
+#management.security.enabled: false
+#spring.h2.console.enabled: true
 
 # Logging
 logging:
@@ -23,11 +23,11 @@ management:
       
 
         
-# Datasource ()
-example.property: "This is from DEFAULT"
+#Datasource ()
+#example.property: "This is from DEFAULT"
 #spring.jpa.database: "POSTGRESQL"
 #spring.datasource.platform: "postgres"
-spring.jpa.show-sql: "true"
+#spring.jpa.show-sql: "true"
 #spring.datasource.driver-class-name: "org.postgresql.Driver"
 #spring.datasource.url: "jdbc:postgresql://database:5432/assets_local"
 #spring.datasource.username: "postgres"
@@ -35,15 +35,28 @@ spring.jpa.show-sql: "true"
 #spring.datasource.testWhileIdle: "true"
 #spring.datasource.validationQuery: "SELECT 1"
 #spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
-
-
-# We want to use an embedded h2 db with the schema.sql load
-# ddl is the process of letting h2 auto-create your tables
-# turn ddl off to use the schema.sql file
-spring.datasource.platform: h2
-spring.datasource.initialization-mode: always
-# These aren't needed and I don't know what they do
-spring.jpa.generate-ddl : false
-spring.jpa.hibernate.ddl-auto: none
-spring.datasource.initialize: true
+#
+#
+#We want to use an embedded h2 db with the schema.sql load
+#ddl is the process of letting h2 auto-create your tables
+#turn ddl off to use the schema.sql file
+#spring.datasource.platform: h2
+#spring.datasource.initialization-mode: always
+#These aren't needed and I don't know what they do
+#spring.jpa.generate-ddl : false
+#spring.jpa.hibernate.ddl-auto: none
+#spring.datasource.initialize: true
 #spring.datasource.schema: schema.sql
+
+
+example.property: "I AM IN THE DEFAULT"
+spring.jpa.database: "POSTGRESQL"
+spring.datasource.platform:  "postgres"
+spring.jpa.show-sql: "true"
+spring.database.driverClassName: "org.postgresql.Driver"
+spring.datasource.url: "jdbc:postgresql://database:5432/assets_local"
+spring.datasource.username: "postgres"
+spring.datasource.password: "{cipher}8b20d400c608373c1cfddb0e7438002865e6171a8434ce5bd328e214ad1daed6"
+spring.datasource.testWhileIdle: "true"
+spring.datasource.validationQuery: "SELECT 1"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
