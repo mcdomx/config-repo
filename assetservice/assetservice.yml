@@ -11,13 +11,13 @@ logging.level.org.hibernate: ERROR
 logging.level.com.mcdonald: DEBUG
 
 # Include all actuator endpoints
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - '*'
-      base-path: '/'
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:
+#        - '*'
+#      base-path: '/'
 
 # Datasource ()
 example.property: "This is from DEFAULT"

@@ -1,18 +1,18 @@
 # Setting logging levels
 logging:
     level:
-      com.netflix: WARN
-      org.springframework.web: WARN
+      com.netflix: INFO
+      org.springframework.web: INFO
       com.mcdomx: DEBUG
       
 # Include all actuator endpoints
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - '*'
-      base-path: '/'
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:
+#        - '*'
+#      base-path: '/'
 
 
 #Use Case 1
