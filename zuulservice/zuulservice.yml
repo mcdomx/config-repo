@@ -21,8 +21,6 @@ management:
 #   enabled: false
 # this doesn't seem to make a difference one way or another
 
-zuul:
-  decode-url: false
 
 #Use Case 1
 # No Zuul settings - default 
@@ -34,6 +32,7 @@ zuul:
 #
 #Use Case 3
 zuul:
+  decode-url: false
   routes:
     organizationservice: /organization/**
     assetservice: /assets/**
