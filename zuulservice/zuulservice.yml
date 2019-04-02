@@ -15,10 +15,11 @@ management:
        - '*'
      base-path: '/'
      
-# Trying this to see if it may stop route-rewritting problem
+# Trying this to see if it may stop route-rewriting problem
 ribbon:
-  restclient:
-    enabled: true
+ restclient:
+   enabled: false
+# this doesn't seem to make a difference one way or another
 
 
 #Use Case 1
