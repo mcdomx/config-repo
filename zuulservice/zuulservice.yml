@@ -32,7 +32,6 @@ management:
 #
 #Use Case 3
 zuul:
-  decode-url: false
   routes:
     organizationservice: /organization/**
     assetservice: /assets/**
