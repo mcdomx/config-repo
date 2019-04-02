@@ -20,6 +20,13 @@ management:
 # restclient:
 #   enabled: false
 # this doesn't seem to make a difference one way or another
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
+      
+zuul:RibbonRoutingFilter:route:disable: true
+
 
 
 #Use Case 1
