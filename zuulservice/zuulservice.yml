@@ -16,11 +16,13 @@ management:
      base-path: '/'
      
 # Trying this to see if it may stop route-rewriting problem
-ribbon:
- restclient:
-   enabled: false
+#ribbon:
+# restclient:
+#   enabled: false
 # this doesn't seem to make a difference one way or another
 
+zuul:
+  decode-url: false
 
 #Use Case 1
 # No Zuul settings - default 
