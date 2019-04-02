@@ -6,6 +6,7 @@ logging:
       com.mcdonald: DEBUG
       
 # Include all actuator endpoints
+# This is necessary for Zuul to show routes and filters and enable refresh
 management:
  endpoints:
    web:
@@ -13,6 +14,11 @@ management:
        include:
        - '*'
      base-path: '/'
+     
+# Trying this to see if it may stop route-rewritting problem
+ribbon:
+  restclient:
+    enabled: true
 
 
 #Use Case 1
