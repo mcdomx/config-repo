@@ -6,13 +6,13 @@ logging:
       com.mcdonald: DEBUG
       
 # Include all actuator endpoints
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include:
-#        - '*'
-#      base-path: '/'
+management:
+ endpoints:
+   web:
+     exposure:
+       include:
+       - '*'
+     base-path: '/'
 
 
 #Use Case 1
