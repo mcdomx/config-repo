@@ -25,7 +25,7 @@ management:
 #    eager-load:
 #      enabled: true
       
-zuul:RibbonRoutingFilter:route:disable: true
+
 
 
 
