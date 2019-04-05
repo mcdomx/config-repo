@@ -45,7 +45,7 @@ management:
 
 #Use Case 4
 zuul:
-  ignored-servces: organizationservice, assetservice
+  ignored-services: organizationservice, assetservice
   routes:
     organizationservice: /organization/**
     assetservice: /assets/**
