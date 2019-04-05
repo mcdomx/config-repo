@@ -8,6 +8,7 @@ spring.h2.console.enabled: true
 # Logging
 logging.level.org.springframework.web: INFO
 logging.level.org.hibernate: ERROR
+logging.level.com.netflix: INFO
 logging.level.com.mcdonald: INFO
 
 # Include all actuator endpoints
