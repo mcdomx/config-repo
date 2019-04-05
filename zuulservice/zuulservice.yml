@@ -33,10 +33,10 @@ management:
 # No Zuul settings - default 
    
 #Use Case 2
-#zuul:
-#routes:
-#   organizationservice: /organization/**
-#
+zuul:
+routes:
+  organizationservice: /organization/**
+
 #Use Case 3
 #zuul:
 #  routes:
@@ -53,6 +53,7 @@ management:
 #Use Case 5
 #zuul:
 #  prefix:  /api
+#  ignored-servces: organizationservice, assetservice
 #  routes:
 #    organizationservice: /organization/**
 #    assetservice: /assets/**
