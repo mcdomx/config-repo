@@ -51,20 +51,23 @@ management:
 #    assetservice: /assets/**
 #
 #Use Case 5
+#zuul:
+#  prefix:  /api
+#  ignored-services: organizationservice, assetservice
+#  routes:
+#    organizationservice: /organization/**
+#    assetservice: /assets/**
+#
+#Use Case 6
 zuul:
   prefix:  /api
   ignored-services: organizationservice, assetservice
   routes:
     organizationservice: /organization/**
     assetservice: /assets/**
-#
-#Use Case 6
-#zuul:
-# prefix:  /api
-# routes:
-#    assetstatic:
-#        path: /assetstatic/**
-#        url: //assetservice-static:8081
+    assetstatic:
+      path: /assetstatic/**
+      url: //assetservice-static:8081
 #
 #Use Case 7
 #zuul:
