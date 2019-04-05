@@ -60,7 +60,6 @@ management:
 #
 #Use Case 6
 #zuul:
-#  prefix:  /api
 #  ignored-services: organizationservice, assetservice
 #  routes:
 #    organizationservice: /organization/**
@@ -71,7 +70,6 @@ management:
 #
 #Use Case 7
 zuul:
-  prefix:  /api
   ignored-services: organizationservice, assetservice
   routes:
     organizationservice: /organization/**
