@@ -34,8 +34,8 @@ management:
    
 #Use Case 2
 zuul:
-routes:
-  organizationservice: /organization/**
+  routes:
+    organizationservice: /organization/**
 
 #Use Case 3
 #zuul:
