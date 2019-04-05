@@ -59,16 +59,6 @@ management:
 #    assetservice: /assets/**
 #
 #Use Case 6
-#zuul:
-#  ignored-services: organizationservice, assetservice
-#  routes:
-#    organizationservice: /organization/**
-#    assetservice: /assets/**
-#    assetstatic:
-#      path: /assetstatic/**
-#      url: //assetservice-static:8081
-#
-#Use Case 7
 zuul:
   ignored-services: organizationservice, assetservice
   routes:
@@ -76,11 +66,21 @@ zuul:
     assetservice: /assets/**
     assetstatic:
       path: /assetstatic/**
-      serviceId: assetservice
-  ribbon:
-    eureka:
-       enabled: false
-  assetstatic:
-    ribbon:
-      listOfServers: http://assetservice-static:8081, http://assetservice-static2:8082
+      url: //assetservice-static:8081
+#
+#Use Case 7
+#zuul:
+#  ignored-services: organizationservice, assetservice
+#  routes:
+#    organizationservice: /organization/**
+#    assetservice: /assets/**
+#    assetstatic:
+#      path: /assetstatic/**
+#      serviceId: assetservice
+#  ribbon:
+#    eureka:
+#       enabled: false
+#  assetstatic:
+#    ribbon:
+#      listOfServers: http://assetservice-static:8081, http://assetservice-static2:8082
    
