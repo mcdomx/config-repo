@@ -9,7 +9,7 @@ spring.h2.console.enabled: true
 logging.level.org.springframework.web: INFO
 logging.level.org.hibernate: ERROR
 logging.level.com.netflix: INFO
-logging.level.com.mcdonald: INFO
+logging.level.com.mcdonald: DEBUG
 
 # Include all actuator endpoints
 management:
