@@ -21,9 +21,9 @@ logging.level.com.mcdonald: DEBUG
 #      base-path: '/'
 
 security:
- oauth2:
-  resource:
-    userInfoUri: http://authenticationservice:8901/auth/user
+  oauth2:
+    resource:
+      userInfoUri: http://authenticationservice:8901/auth/user
 
 # Datasource ()
 example.property: "This is from DEFAULT"
