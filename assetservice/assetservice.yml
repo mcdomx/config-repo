@@ -25,7 +25,7 @@ security:
     resource:
       userInfoUri: http://authenticationservice:8901/auth/user
       client:
-        clientId: assetservice
+        client-id: assetservice
         clientSecret: secretsanta
       
 

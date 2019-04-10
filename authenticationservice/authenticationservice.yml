@@ -17,5 +17,4 @@ server:
   servlet:
     contextPath:   /auth
 
-# Testing to solve unauthorized request problem
-#management.security.enabled: false
+
