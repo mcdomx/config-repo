@@ -20,6 +20,11 @@ logging.level.com.mcdonald: DEBUG
 #        - '*'
 #      base-path: '/'
 
+security:
+ oauth2:
+  resource:
+    userInfoUri: http://localhost:8901/auth/user
+
 # Datasource ()
 example.property: "This is from DEFAULT"
 spring.jpa.database: "POSTGRESQL"

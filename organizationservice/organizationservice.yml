@@ -12,14 +12,18 @@ logging.level.com.netflix: INFO
 logging.level.com.mcdonald: DEBUG
 
 # Include all actuator endpoints
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - '*'
-      base-path: '/'
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:
+#        - '*'
+#      base-path: '/'
 
+security:
+ oauth2:
+  resource:
+    userInfoUri: http://localhost:8901/auth/user
 
 # Datasource ()
 example.property: "This is from DEFAULT"
