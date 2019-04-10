@@ -24,9 +24,13 @@ security:
   oauth2:
     resource:
       userInfoUri: http://authenticationservice:8901/auth/user
-      client:
-        clientId: assetservice
-        clientSecret: secretsanta
+    client:
+      clientId: assetservice
+      clientSecret: secretsanta
+      grant-type: password
+      scope:
+      - weblient
+        
       
 
 # Datasource ()
