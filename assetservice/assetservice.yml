@@ -24,6 +24,10 @@ security:
   oauth2:
     resource:
       userInfoUri: http://authenticationservice:8901/auth/user
+      client:
+      clientId: assetservice
+      clientSecret: secretsanta
+      
 
 # Datasource ()
 example.property: "This is from DEFAULT"
