@@ -1,7 +1,7 @@
 logging:
   level:
     com.netflix: WARN
-    org.springframework.web: WARN
+    org.springframework.web: ERROR
     com.mcdonald: DEBUG
 
 eureka:
@@ -14,5 +14,8 @@ eureka:
         defaultZone: http://eurekaserver:8761/eureka/
 
 server:
-  contextPath:   /auth
+  servlet:
+    contextPath:   /auth
 
+# Testing to solve unauthorized request problem
+#management.security.enabled: false
