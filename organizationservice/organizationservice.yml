@@ -23,7 +23,7 @@ logging.level.com.mcdonald: DEBUG
 security:
  oauth2:
   resource:
-    userInfoUri: http://localhost:8901/auth/user
+    userInfoUri: http://authenticationservice:8901/auth/user
 
 # Datasource ()
 example.property: "This is from DEFAULT"

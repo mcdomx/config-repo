@@ -53,7 +53,7 @@ management:
 #Use Case 5
 zuul:
   prefix:  /api
-  ignored-services: organizationservice, assetservice
+#  ignored-services: organizationservice, assetservice
   routes:
     organizationservice: /organization/**
     assetservice: /assets/**
