@@ -25,11 +25,6 @@ management:
 #    eager-load:
 #      enabled: true
       
-# These headers are marked sensitive and won't be forwarded
-# Normally, "Authorization" is included in this list, but since
-# it is missing, it is not marked as sensitive and will be forwarded
-zuul.sensitiveHeaders: Cookie,Set-Cookie
-
 
 #Use Case 1
 # No Zuul settings - default 
@@ -53,13 +48,17 @@ zuul.sensitiveHeaders: Cookie,Set-Cookie
 #    assetservice: /assets/**
 #
 #Use Case 5
+# These headers are marked sensitive and won't be forwarded
+# Normally, "Authorization" is included in this list, but since
+# it is missing, it is not marked as sensitive and will be forwarded
 zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
   prefix:  /api
 #  ignored-services: organizationservice, assetservice
   routes:
     organizationservice: /organization/**
     assetservice: /assets/**
-#
+    
 #Use Case 6
 #zuul:
 #  prefix:  /api
