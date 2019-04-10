@@ -25,8 +25,8 @@ security:
     resource:
       userInfoUri: http://authenticationservice:8901/auth/user
     client:
-      clientId: assetservice
-      clientSecret: {noop}secretsanta
+#      clientId: assetservice
+#      clientSecret: secretsanta
       grant-type: password
       scope:
       - weblient
