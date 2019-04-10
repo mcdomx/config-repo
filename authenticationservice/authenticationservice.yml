@@ -15,7 +15,7 @@ eureka:
 
 server:
   servlet:
-    contextPath:   /authx
+    contextPath:   /auth
 
 # Testing to solve unauthorized request problem
 #management.security.enabled: false
