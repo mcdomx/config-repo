@@ -53,7 +53,7 @@ management:
 # it is missing, it is not marked as sensitive and will be forwarded
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie
-#  prefix:  /api
+  prefix:  /api
 #  ignored-services: organizationservice, assetservice
   routes:
     organizationservice: /organization/**
