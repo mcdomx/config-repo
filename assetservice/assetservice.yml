@@ -11,27 +11,19 @@ logging.level.org.hibernate: ERROR
 logging.level.com.netflix: INFO
 logging.level.com.mcdonald: DEBUG
 
-# Include all actuator endpoints
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include:
-#        - '*'
-#      base-path: '/'
-
 security:
   oauth2:
     resource:
       userInfoUri: http://authenticationservice:8901/auth/user
 
-#security.oauth2.client.grant-type: password
+
+
 
 #    client:
 #      grant-type: password
 #    scope:
 #    - webclient, mobileclient
-     #      client-id: "assetservice"
+#      client-id: "assetservice"
 #      client-secret: "{noop}secretsanta"
     
       
