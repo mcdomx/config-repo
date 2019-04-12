@@ -1,7 +1,7 @@
 properties.file: default
 app.info: default
 
-spring.thymeleaf.cache: false
+#spring.thymeleaf.cache: false
 management.security.enabled: false
 spring.h2.console.enabled: true
 
@@ -11,8 +11,15 @@ logging.level.org.hibernate: ERROR
 logging.level.com.netflix: INFO
 logging.level.com.mcdonald: DEBUG
 
+# Include all actuator endpoints
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:
+#        - '*'
+#      base-path: '/'
 
-# For passing tokens to downstream applications
 security:
   oauth2:
     resource:
