@@ -18,7 +18,7 @@ security:
     resource:
       userInfoUri: http://authenticationservice:8901/auth/user
 
-security.oauth2.client.grant-type: password
+#security.oauth2.client.grant-type: password
 
 #    client:
 #      grant-type: password
