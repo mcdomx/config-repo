@@ -19,7 +19,7 @@ security:
       userInfoUri: http://authenticationservice:8901/auth/user
     client:
       client-id: "assetservice"
-      client-secret: "{noop}secretsanta"
+      client-secret: "secretsanta"
       grant-type: password
       scope:
       - webclient, mobileclient
