@@ -13,16 +13,16 @@ logging.level.com.mcdonald: DEBUG
 
 
 # For passing tokens to downstream applications
-#security:
-#  oauth2:
-#    resource:
-#      userInfoUri: http://authenticationservice:8901/auth/user
-#    client:
-#      client-id: "assetservice"
-#      client-secret: "{noop}secretsanta"
-#      grant-type: password
-#      scope:
-#      - webclient, mobileclient
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://authenticationservice:8901/auth/user
+    client:
+      client-id: "assetservice"
+      client-secret: "{noop}secretsanta"
+      grant-type: password
+      scope:
+      - webclient, mobileclient
     
       
 
