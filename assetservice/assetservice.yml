@@ -17,12 +17,12 @@ security:
   oauth2:
     resource:
       userInfoUri: http://authenticationservice:8901/auth/user
-#    client:
+   client:
 #      client-id: "assetservice"
 #      client-secret: "{noop}secretsanta"
-#      grant-type: password
-#      scope:
-#      - webclient, mobileclient
+     grant-type: password
+     scope:
+     - webclient, mobileclient
     
       
 
