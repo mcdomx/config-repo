@@ -25,6 +25,21 @@ security:
     resource:
       userInfoUri: http://authenticationservice:8901/auth/user
 
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination:  orgChangeTopic
+          content-type: application/json
+      kafka:
+        binder:
+          zkNodes: localhost
+          brokers: localhost
+
+
+
 # Datasource ()
 example.property: "This is from DEFAULT"
 spring.jpa.database: "POSTGRESQL"
