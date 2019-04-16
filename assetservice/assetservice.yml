@@ -22,18 +22,31 @@ security:
 #      client-id: "assetservice"
 #      client-secret: "{noop}secretsanta"
 
+#spring:
+#  cloud:
+#    stream:
+#      bindings:
+#        input:
+#          destination:  orgChangeTopic
+#          content-type: application/json
+#          group: licensingGroup
+#      kafka:
+#        binder:
+#          zkNodes: 192.168.65.0
+#          brokers: 192.168.65.0
+          
 spring:
-  cloud:
-    stream:
-      bindings:
-        input:
-          destination:  orgChangeTopic
-          content-type: application/json
-          group: licensingGroup
-      kafka:
-        binder:
-          zkNodes: 192.168.65.0
-          brokers: 192.168.65.0
+   kafka:
+     consumer:
+        bootstrap-servers: 192.168.65.0:9092
+        group-id: licensingGroup
+        auto-offset-reset: earliest
+        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+     producer:
+        bootstrap-servers: 192.168.65.0:9092
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
 # Datasource ()
 example.property: "This is from DEFAULT"
