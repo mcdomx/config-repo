@@ -32,9 +32,9 @@ spring:
           group: licensingGroup
       kafka:
         binder:
-          zkNodes: localhost
-          brokers: localhost
+          brokers: 192.168.65.0
           
+#          zkNodes: 192.168.65.0
 
           
 #spring:
