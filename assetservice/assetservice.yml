@@ -31,7 +31,6 @@ spring:
           content-type: application/json
           group: licensingGroup
       kafka:
-        streams:
           binder:
             brokers: 192.168.65.0
           
