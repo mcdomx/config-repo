@@ -32,7 +32,7 @@ spring:
           group: licensingGroup
       kafka:
         binder:
-          brokers: 192.168.65.0
+          brokers: kafkaserver
           
 #          zkNodes: 192.168.65.0
 
