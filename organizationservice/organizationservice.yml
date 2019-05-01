@@ -25,15 +25,13 @@ security:
     resource:
       userInfoUri: http://authenticationservice:8901/auth/user
 
+
 spring:
   zipkin:
     base-url: http://zipkin:9411    
   sleuth:
     sampler:
       probability: 1
-
-
-spring:
   cloud:
     stream:
       bindings:
