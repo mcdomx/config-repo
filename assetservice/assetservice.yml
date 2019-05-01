@@ -22,7 +22,13 @@ security:
 #      client-id: "assetservice"
 #      client-secret: "{noop}secretsanta"
 
-spring.zipkin.basUrl: http://zipkin:9411
+spring:
+  zipkin:
+    base-url: http://zipkin:9411    
+  sleuth:
+    sampler:
+      probability: 1
+
 
 spring:
   cloud:

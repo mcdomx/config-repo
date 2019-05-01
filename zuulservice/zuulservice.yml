@@ -58,7 +58,15 @@ zuul:
   routes:
     organizationservice: /organization/**
     assetservice: /assets/**
-    
+
+spring:
+  zipkin:
+    base-url: http://zipkin:9411    
+  sleuth:
+    sampler:
+      probability: 1
+
+
 #Use Case 6
 #zuul:
 #  prefix:  /api
