@@ -6,10 +6,11 @@ management.security.enabled: false
 #spring.h2.console.enabled: true
 
 # Logging
-logging.level.org.springframework.web: INFO
-logging.level.org.hibernate: ERROR
-logging.level.com.netflix: INFO
-logging.level.com.mcdonald: DEBUG
+logging.level:
+  org.springframework.web: INFO
+  org.hibernate: ERROR
+  com.netflix: INFO
+  com.mcdonald: DEBUG
 
 security:
   oauth2:
@@ -18,7 +19,7 @@ security:
 
 spring:
   zipkin:
-    base-url: http://zipkin:9411    
+    base-url: http://zipkin:9411
   sleuth:
     sampler:
       probability: 1
