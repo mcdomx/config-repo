@@ -15,12 +15,6 @@ security:
   oauth2:
     resource:
       userInfoUri: http://authenticationservice:8901/auth/user
-#    client:
-#      grant-type: password
-#      scope:
-#      - webclient, mobileclient
-#      client-id: "assetservice"
-#      client-secret: "{noop}secretsanta"
 
 spring:
   zipkin:
